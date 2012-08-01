@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>BotB-Mail-o-matic</title>
+  <link rel="stylesheet" type="text/css" href="botbmailstyles.css" />
+  <script type="text/javascript" src="botbmail.js"></script><!--Functionality-->
+  <script type="text/javascript" src="maildata.js"></script><!--Data-->
+  <!--<link rel="script" type="text/javascript" href="botbmail.js" />
+  <meta http-equiv="Content-Type" content="; charset=utf-8" />-->
+</head>
+<body onload="setHeadline()">
+<h1>Battle of the Bits-Mail-o-matic</h1>
+<br />
+<span id="botbmail_headline">JavaScript is needed for this!!</span>
+<button
+	id="refresh"
+	accesskey="a"
+	onclick="setHeadline()"
+	title="Alt-A or Alt-Shift-A">Refresh</button>
+<button
+	id="for"
+	accesskey="s"
+	onclick="findHeadline()"
+	title="Alt-S or Alt-Shift-S">Refresh With Term...</button>
+<br /><br />
+<span id="statusarea"></span>
+<script type="text/javascript">setHeadline();</script>
+<p>Based off of this project:<br />http://www.qwghlm.co.uk/toys/dailymail/</p>
+</body>
+</html>
+
