@@ -11,17 +11,21 @@
 <h1>Battle of the Bits-Mail-o-matic</h1>
 <br />
 <span id="botbmail_headline">JavaScript is needed for this!!</span>
+<div id="controls">
 <button
 	id="refresh"
 	accesskey="a"
 	onclick="setHeadline()"
 	title="Alt-A or Alt-Shift-A">Refresh</button>
+|
+<input id="termfield" type="text" size="12" />
 <button
 	id="for"
 	accesskey="s"
 	onclick="findHeadline()"
-	title="Alt-S or Alt-Shift-S">Refresh With Term...</button>
+	title="Alt-S or Alt-Shift-S">Refresh Until Term...</button>
 <br /><br />
+</div>
 <span id="statusarea"></span>
 <script type="text/javascript">setHeadline();</script>
 <p>Based off of this project:<br />http://www.qwghlm.co.uk/toys/dailymail/</p>
