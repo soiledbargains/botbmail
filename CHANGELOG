@@ -1,0 +1,77 @@
+0.14 [02 Aug 2012]
+  Too many changes to list since 0.101, here are most of them, in no
+  particular order (pardon my lack of proper terminology):
+  
+  * The data file is now object-free, saving a good 2-3kB of space.
+  
+  * The class definitions for Noun, Phrase, and Verb have been removed. All
+    properties are now elements in huge arrays.
+    
+  * The subjects and objects arrays have been merged into one Array called
+    subjects (how intuitive).
+  
+  * getRandom(), match_verb_and_subject(), match_verb_and_tense(), and 
+    getHeadline() have been repurposed for the object-less data. They
+    have become more complex and now have arguments. getRandom() is the
+    only function that is backwards-compatible (of course that makes
+    no difference, but something to note). These functions, rather than
+    using objects and accessing their properties, now use arrays and access
+    their indicies via hard-coded numbers.
+   
+  * getRandom() has had the most changes with two new optional arguments:
+      * The second argument ("s") specifies the length of the array data to be
+        returned. s's defaults to 1 as to behave like in 0.101 The length of
+        the first argument, Array a, must be a multiple of s. This was done
+        since Phrases had four properties where as Verbs and Nouns had three.
+      * getRandom() has always been more random in that it populates an Array
+        with random numbers, then chooses a random element from it. The third
+        argument, l, can now set that length. l defaults to 50, the value
+        hard-coded in 0.101. This was done because of how expensive creating
+        multiple headlines can be. In 0.101, having findHeadline() go through
+        its limit of 191 rounds performed 10,696 math operations.
+
+  * match_verb_and_subject() now takes into account the quantity of the
+    subject. It started mismatching things... and Soiled can't remember how...
+    which is really weird... but it was a side-effect of merging the subjects
+    and objects arrays.
+
+  * Timeouts are now called via window instead of, uh, out of the blue. To be
+    less ugly, timeouts are no longer use eval() but call functions. Since
+    inline functions (or function expressions? Man, I don't know! :P) did
+    not work properly, the _setRoulette() and _setFade() functions (explained
+    later on) have been created to be used in timeouts. The new arrays
+    _curRoul and _fadeTimers store the current/last set of timers for
+    their respective duties. This is can be done since window.setTimeout()
+    returns a value that can be passed on to window.clearTimeout().
+
+  * printStatus() now handles fade-outs correctly after it has been called
+    more than once in a brief period of time. This has resulted in the creation
+    of the Array _fadeTimers and the function _setFade(). An object literal 
+    argument can now be passed that can specify the time the message stays up,
+    and whether or not to fade.
+
+  * roulette() now behaves correctly after it is called more than once in a
+    brief period of time. This has resulted in the creation of the Array
+    _curRoul and the function _setRoulette(). However, a new bug has popped-up:
+    if the array length is small (especially if it's one), it will not pop-up
+    immediately, but instead wait for the "curve" to "finish".
+
+  * findHeadline()'s problem of layering prompt()'s has been solved:
+    an input#termfield has now been added to the web page and is used instead.
+    To be less expensive, it calls getRandom() in such a way as to perform
+    at least 1,000 less math operations in a worse case scenario.
+
+0.12 [01 Aug 2012]
+  * Using objects to store parts of speech is an inefficent use of bits.
+    The data arrays are now strings and ints instead of objects 
+    (a good 2-3kB removed), which has made this file larger, harder to read,
+    and more hard-coded.
+  * Merged objects and subjects together.
+  * Removed class declarations.
+  * Added some more comments.
+  
+0.101 [31 Jul 2012]
+  * Added putHeadline(), findHeadline(), roulette(), and printStatus().
+  
+0.1 [31 Jul 2012]
+  * FORK'D!!
