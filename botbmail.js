@@ -53,8 +53,8 @@ function getRandom(a,s,l) { //"55, male, in my mother's basement"
 function match_verb_and_subject(subject, verb) {
 	console.log(subject);
 	console.log(verb);
-	if (subject[1] == 1 && subject[1] == 3 /*||
-		subject[2] > 1*/) {
+	if (subject[1] == 1 && subject[1] == 3 ||
+		subject[2] > 1) {
 		return(verb[0]);
 	} else { 
 		return(verb[1]);
