@@ -1,3 +1,7 @@
+0.141 [03 Aug 2012]
+  * Fadeouts looks smoother. printStatus() now defaults to displaying the
+    messsage for 3s when fadeout is true instead of 2.5s.
+
 0.14 [02 Aug 2012]
   Too many changes to list since 0.101, here are most of them, in no
   particular order (pardon my lack of proper terminology):

@@ -1,25 +1,19 @@
 // Auxiliary verbs (the first word in the sentence
-auxiliary_verbs = [
-"will", "will", "present", 
+auxiliary_verbs = ["will", "will", "present", 
 "could", "could", "present",
 "are", "is", "active",
 "have", "has", "past",
 "do", "does", "present",
-"can", "can", "present"
-];
-
+"can", "can", "present"];
 // Transitive phrases (i.e. bad thing they do
-transitive_phrases = [
-"give", "given", "giving", "cancer",
+transitive_phrases = ["give", "given", "giving", "cancer",
 "give", "given", "giving", "cancer", // Have it twice as they're so bloody obsessed by it
 "infect", "infected", "infecting", "with AIDS",
 "give", "given", "giving", "swine flu",
 "make", "made", "making", "obese",
 "give", "given", "giving", "diabetes",
 "make", "made", "making", "impotent",
-
 "turn","turned","turning","gay",    // Cunts
-
 "scrounge off","scrounged off","scrounging off","",
 "tax", "taxed", "taxing", "",
 "cheat", "cheated", "cheating", "",
@@ -28,19 +22,14 @@ transitive_phrases = [
 "burgle","burgled","burgling","",
 "devalue","devalued","devaluing","",
 "rip off","ripped off","ripping off","",
-	
 "molest","molested","molesting","",
 "have sex with","had sex with","having sex with","",
 "impregnate", "impregnated", "impregnating", "",
-
-	
 "steal the identity of","stolen the identity of","stealing the identity of","",	
-
 "destroy","destroyed","destroying","",
 "kill","killed", "killing","",
 "ruin","ruined","ruining","",
 "hurt","hurt", "hurting","",
-	
 /* BOTB TIME */
 "mess with","messed with","messing with","",
 "froon with","frooned with","frooning with","",
@@ -80,9 +69,14 @@ transitive_phrases = [
 "making conversations about","awkward",
 "clone","cloned","cloning","",
 "flip-off","flipped-off","flipping-off","",
-"project","projected","projecting","at an all time high"
-];
-
+"project","projected","projecting","at an all time high",
+"take out","take out","taking out","to eat",
+"go to the movies with","went to the movies with","going to the movies with","",
+"go out with","went out with","going out with","",
+"be in the kitchen with","in the kitchen with","in the kitchen with","",
+"blow","blown","blowing","out of the water",
+"pretend to be","pretended to be","pretending to be","",
+"cross-dress with","cross-dressed with","cross-dressing with",""];
 subjects = [
 // Subjects (i.e. bad things
 "the labour party",3,1,
@@ -94,8 +88,6 @@ subjects = [
 "the unions",3,2,       // May be a bit quaint this one
 "channel 4",3,1,
 "your local council",3,1,
-
-
 "the french",3,2,
 "the germans",3,2,
 "the poles",3,2,
@@ -112,16 +104,12 @@ subjects = [
 "the p.c. brigade",3,2,
 "cyclists",3,2,          // Thanks to Chris Richards for this suggestion
 "foxes",3,2,
-
-	
 "asylum seekers",3,2,    // Nicer way of saying 'brown people'
 "gays",3,2,
 "lesbians",3,2,
 "single mothers",3,2,
 "paedophiles",3,2,
-	
 "working mothers",3,2,   // Thanks to Maggie A for this suggestion
-	
 "teenage sex",3,1,
 "political correctness",3,1,
 "health &amp; safety",3,1,
@@ -139,7 +127,6 @@ subjects = [
 "binge drinking",3,1,
 "the MMR jab",3,1,          // Murdering cunts
 "the house price crash",3,1, // Hahahaha
-	
 /*BOTB time*/
 "barrel rolls",3,2,
 "Barack Obama",3,1,
@@ -197,36 +184,29 @@ subjects = [
 "VEVO",3,1,
 "8bc",3,1,
 "dubmood",3,1,
-"those mean rich people",3,1,
+"those mean rich people",3,2,
 "heat wave",3,1,
-	
 // Objects (i.e. saintly, saintly things
 "the british people",3,1,
 "the middle class",3,1,
 "middle britain",3,1, // Cunts
 "england",3,1,
-
 "hard-working families",3,2,
 "homeowners",3,2,
 "pensioners",3,2,
 "drivers",3,2,
 "taxpayers",3,2,
 "taxpayers' money",3,1,
-		
 "house prices",3,2,
 "property prices",3,2, // Hahahahahahahaa
-	
 "britain's farmers",3,2,
 "the countryside",3,1,
-    
 "british justice",3,1,
 "british sovereignty",3,1,
 "common sense and decency",3,1,
-    
 "the queen",3,1,    // God bless 'er
 "the royal family",3,1,
 "the church",3,1,
-    
 "you",2,1,
 "your mortgage",2,1,
 "your pension",2,1,
@@ -234,12 +214,10 @@ subjects = [
 "your children",2,2,
 "your house",2,1,
 "your pets",2,2,
-    
 "the conservative party",3,1,  // FAIL
 "cliff richard",3,1,           // Should this be in here?
 "the memory of diana",3,1,
 "Britain's swans",3,2,          // This always stays
-	
 /* BOTB TIME */
 "Strobe",3,1,
 "Svetlana",3,1,
@@ -346,8 +324,35 @@ subjects = [
 "michu",3,1,
 "iamgreaser",3,1,
 "MandraSigma",3,1,
-"ElHuesudoII",3,1,
+"El Huesudo II",3,1,
 "jrlepage",3,1,    
 "tadpole",3,1,
 "Soiled Bargains",3,1,
-];
+"a compo",3,1,
+"compos",3,2,
+"demoscene",3,1,
+"beer",3,1,
+"NTRQ",3,1,
+"bencils",3,2,
+"frantic",3,1,
+"sci",3,1,
+"sc",3,1,
+"vimster",3,1,
+"chipchop",3,1,
+"xterm",3,1,
+"wollymammoth",3,1,
+"lunar",3,1,
+"coda",3,1,
+"people",3,1,
+"Detriot",3,1,
+"mootbooxle",3,1,
+"Velathnos",3,1,
+"Shnabubula",3,1,
+"mint",3,1,
+"Microsoft",3,1,
+"cannabis",3,1,
+"Snoop Dogg",3,1,
+"David Cameron",3,1,
+"Sarah Connor",3,1,
+"Wing",3,1,
+"basil",3,1];

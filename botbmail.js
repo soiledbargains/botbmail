@@ -12,7 +12,7 @@
   - wollymammoth
   - lunar
  
- Version: 0.14 02 Aug 2012
+ Version: 0.141 03 Aug 2012
  License: GNU GPL v2 or later
  
  ChangeLog available at <https://github.com/soiledbargains/botbmail>
@@ -51,8 +51,6 @@ function getRandom(a,s,l) { //"55, male, in my mother's basement"
 // Matches an auxiliary verb with the subject, taking into account
 // the person (subject[1]) and quantity (subject[2]).
 function match_verb_and_subject(subject, verb) {
-	console.log(subject);
-	console.log(verb);
 	if (subject[1] == 1 && subject[1] == 3 ||
 		subject[2] > 1) {
 		return(verb[0]);
@@ -160,13 +158,13 @@ function _setRoulette(ps,tim) {
 
 // TODO: Make sure setTimeout()'s don't collide and be ugly.
 _fadeTimers = new Array();
-_fadeLens = [[0.8, 0.8], [0.4, 0.9], [0.2, 0.95]];
+_fadeLens = [[0.8, 0.85], [0.4, 0.9], [0.2, 0.95]];
 function printStatus(m,opts) {
 	if (opts == null) { opts = {}; }
 	for (i=_fadeTimers.length;i>0;i--) {
 		window.clearTimeout(_fadeTimers.pop());
 	}
-	w = opts.wait?opts.wait:2500;
+	w = opts.wait?opts.wait:3000;
 	sb = document.getElementById("statusarea");
 	sb.style.opacity="1";
 	sb.innerHTML = m;
